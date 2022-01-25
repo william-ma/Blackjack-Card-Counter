@@ -8,6 +8,14 @@ public class Card {
     // E.g. "2d" is 2 of diamonds
     String rep;
 
+    Card(String rep) {
+        this.rep = rep;
+    }
+
+    public char getValue() {
+        return rep.charAt(0);
+    }
+
     public static boolean isValidCard(String rep) {
         if (rep.length() != 2) {
             return false;
@@ -17,7 +25,7 @@ public class Card {
 
         char value = repLower.charAt(0);
         boolean isValidValue = (value >= '2' && value <= '9') ||
-                Arrays.asList('j', 'q', 'k', 'a').contains(value);
+                Arrays.asList('t', 'j', 'q', 'k', 'a').contains(value);
         if (!isValidValue) {
             return false;
         }
@@ -30,4 +38,5 @@ public class Card {
 
         return true;
     }
+
 }
