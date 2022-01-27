@@ -1,4 +1,4 @@
-# Blackjack Card Counter
+# BlackJack Card Counter
 
 * Hi-Lo Strategy
 
