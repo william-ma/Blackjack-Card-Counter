@@ -9,7 +9,7 @@ public class Card {
     String rep;
 
     Card(String rep) {
-        this.rep = rep;
+        this.rep = rep.toLowerCase();
     }
 
     public char getValue() {
